@@ -37,7 +37,10 @@ function getTax() {
             prevCeil = parseInt(currCeil);
         }
         totalAns += (value > torontohighestRate.ceil) ? (value - torontohighestRate.ceil) * torontohighestRate.rate : 0;
+        outputToronto.innerHTML = "Toronto Tax: $" + (totalAns - ontarioAns);
+    } else {
+        outputToronto.innerHTML = "Toronto Tax: $0";
     }
-    outputToronto.innerHTML = "Toronto Tax: $" + (totalAns - ontarioAns == 0) ? "0" : totalAns - ontarioAns;
+    
     outputTotal.innerHTML = "Total Tax: $" + totalAns;
 }
