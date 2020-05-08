@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<head>
+  <script src="index.js"></script>
+</head>
+
+<body onload="initialize()">
+  <div class="vbox">
+
+    <input type="number" id="inputBox">
+
+    <div class="hbox">
+      <input type="checkbox" id="isToronto">
+      <label for="isToronto">Is in Toronto?</label>
+    </div>
+
+    <button onclick="getTax()">calculate</button>
+
+    <h1 id="ontario">Ontario Tax: $</h1>
+    <h1 id="toronto">Toronto Tax: $</h1>
+    <h1 id="total">Total Tax: $</h1>
+  </div>
+    
+</body>
